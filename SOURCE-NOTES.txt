@@ -1,0 +1,26 @@
+YEAR 9 METALWORK - SOURCE NOTES
+
+Primary local course source
+- Existing Year 9 Metal repository core units 1-10.
+- Existing index identifies sheet-metal toolbox and fishing rod holder project contexts.
+- Existing end-of-year exam is retained and labelled as teacher-directed.
+
+Current syllabus authority
+- NSW Industrial Technology Years 7-10 Syllabus (2019), the current authority for this existing course while schools plan for the new syllabus.
+- NESA syllabus page: https://educationstandards.nsw.edu.au/wps/portal/nesa/k-10/learning-areas/technology/industrial-technology
+
+Future syllabus reference
+- NSW Industrial Technology 7-10 Syllabus (2025), implemented from 2028.
+- Official outcomes: https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes
+
+Source boundary and excluded material
+- No authentic Metalwork project plans, detailed assessment notification, due date, weighting or submission destination were present.
+- Carry-All_Working_Drawing.pdf is a Timber barbecue carry-all drawing, not Metalwork evidence.
+- carryall.png and numerous carryall week pages are Timber content and are excluded from the new student pathway.
+- The placeholder Google Classroom code and empty link in the old landing page are removed rather than guessed.
+- Dimensions, exact materials, joint specifications and project production details defer to teacher-issued material.
+
+New authored material
+- Each new integrative theory section was authored individually with ChatGPT in the in-app browser using the source boundary above.
+- The new hero is a process-led sheet-metal workshop scene created with ChatGPT. It does not claim to show either finished project or plan geometry.
+- The folio uses one matching 12-panel ChatGPT-created visual sequence, cropped into twelve accessible evidence prompts. It contains no measurements or authentic plan claims.
