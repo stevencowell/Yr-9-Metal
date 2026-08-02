@@ -9,6 +9,7 @@ window.COURSE_DATA = {
       sections: [
         {
           title: "Risk management is a process, not a poster",
+          visual: { position: "65% 0", alt: "Workshop warning, guarded machine, secure bench vice and safety glasses", caption: "Risk management combines hazard recognition, stronger controls, permission and task-specific PPE." },
           paragraphs: [
             "Risk management begins before any cutting, forming, drilling or assembly starts. First, identify hazards in the task, work area, material, tools and the behaviour of people nearby. Then consider how likely each hazard is to cause harm and how serious the consequence could be. A low-likelihood hazard with a severe possible injury still needs careful control. Use teacher-issued plans, classroom controls and demonstrations to decide what applies at each project stage.",
             "Controls should follow the hierarchy: eliminate where possible, then substitute, isolate, use engineering controls, apply administrative controls and finally use personal protective equipment. PPE matters, but it is the final layer, not the whole plan. If a guard, material position, floor condition or work zone changes, stop, make the area safe and seek teacher direction before continuing."
@@ -17,6 +18,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Safe workshop practices",
+          visual: { position: "65% 0", alt: "Workshop safety controls including a guard, vice and eye protection", caption: "A safe setup controls the machine, workpiece, work area and student before work begins." },
           paragraphs: [
             "A safe workshop begins with attention and housekeeping. Follow signage, return material to the correct storage area and keep benches and walkways clear of offcuts. Wear the PPE directed for the task, secure loose hair and clothing, and stay aware of others.",
             "Machine permission applies to the trained person, approved machine, demonstrated setup and current task. Do not use a machine when tired, distracted, unsupervised or when the setup differs from the demonstration."
@@ -25,6 +27,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Incident response and reporting",
+          visual: { position: "65% 0", alt: "Workshop safety warning and protected equipment", caption: "Stop the task, make the area safe and report the changed condition or incident immediately." },
           paragraphs: [
             "If an incident or near miss occurs, stop work, make the immediate area safe and alert the teacher. Do not move equipment, material or an injured person unless directed or required to prevent further harm.",
             "Report near misses as well as injuries. A near miss provides evidence that a control may have failed and allows the class to improve the system before someone is hurt."
@@ -46,6 +49,7 @@ window.COURSE_DATA = {
       sections: [
         {
           title: "Choose metal for the job",
+          visual: { position: "100% 0", alt: "Common metal stock profiles and contrasting surface finishes", caption: "Select material and stock form to suit function, manufacture, environment and the approved brief." },
           paragraphs: [
             "Metals are often grouped as ferrous or non-ferrous. Ferrous metals contain iron and are commonly strong and magnetic, but many can rust if left unprotected. Non-ferrous metals may offer lower mass, corrosion resistance or easier forming, depending on the metal. A property is a characteristic such as hardness, strength, ductility or corrosion resistance; performance describes how well the material works in its intended situation.",
             "Choose material by matching properties to function, fabrication processes, corrosion exposure, availability and finish. A metal may perform well but still be unsuitable if it cannot be safely processed using the approved workshop equipment. Use the teacher-issued plan to identify the project-specific metal, then justify why its properties support the toolbox or fishing rod holder."
@@ -54,6 +58,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Two briefs, two design contexts",
+          visual: { position: "33.333% 0", alt: "Balance showing function, time and available metal stock as linked constraints", caption: "Compare the different users, functions, materials and constraints before choosing a direction." },
           paragraphs: [
             "The existing program identifies a sheet-metal toolbox and a fishing rod holder. Each project solves a different need and may use different forms, joints, loads and finishes. The teacher-issued brief and plan define the exact requirements; this website does not substitute its own geometry.",
             "For each project, separate requirements from preferences. Record the user, function, environment, approved materials and processes, then identify which evidence will demonstrate that the result meets the brief."
@@ -62,6 +67,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Design and project planning",
+          visual: { position: "0 50%", alt: "Several fabricated sheet-metal concepts developed from sketches", caption: "Develop alternatives, compare them against the brief and plan the approved production sequence." },
           paragraphs: [
             "Begin with the design brief, research relevant products, generate concept ideas and develop the approved direction. A working drawing communicates the information needed for production; a cutting list records the teacher-specified parts, material and dimensions.",
             "A production plan sequences work, identifies checkpoints and notes demonstrations or permissions required. Review the plan when evidence shows a change is needed rather than improvising during an irreversible process."
@@ -83,6 +89,7 @@ window.COURSE_DATA = {
       sections: [
         {
           title: "Accuracy before force",
+          visual: { position: "33.333% 50%", alt: "Checked working drawing with steel rule, square and approval mark", caption: "Accurate work begins with the controlling drawing, a reliable datum and a pre-cut check." },
           paragraphs: [
             "Accurate cutting and forming begin with accurate marking-out. A datum or reference edge provides one reliable starting point, so measurements and lines relate to the same known surface. Follow the teacher demonstration and issued plans for project-specific information. Before any cut or form, check that lines are clear, required features are identified and the waste side is marked correctly.",
             "Secure the work using the approved method before cutting, drilling or forming. Do not use extra force to correct a poor line, wrong sequence or moving work. Stop and recheck the datum, waste side, orientation and planned next step. Force cannot repair information that was marked incorrectly at the start."
@@ -91,6 +98,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Marking and measuring tools",
+          visual: { position: "65% 50%", alt: "Metal stock with steel rule, square, marking tool and task PPE", caption: "Choose the correct measuring and marking tool for the feature, material and required accuracy." },
           paragraphs: [
             "Select the measuring and marking tools demonstrated for the feature: a steel rule or tape for suitable lengths, a square for perpendicular references, a scriber for clear layout lines and a centre punch for an approved hole location.",
             "Measurement accuracy prevents wasted material. Read the issued dimension, work from the approved reference and complete an independent recheck before the material enters a cutting, drilling or forming setup."
@@ -99,6 +107,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Cutting and forming sequence",
+          visual: { position: "0 100%", alt: "Metalwork operations showing mark-out, cutting, forming and joining under control", caption: "Sequence operations so each checked datum and feature supports the next stage." },
           paragraphs: [
             "Use only the cutting or forming process shown for the material and feature. Support large or awkward material, keep hands outside the demonstrated danger zone and remove burrs using the approved process before passing work to the next stage.",
             "Forming order can affect later dimensions, hole positions and access. Trial or check at the teacher-specified points, and record what changed rather than forcing a part to match."
@@ -120,6 +129,7 @@ window.COURSE_DATA = {
       sections: [
         {
           title: "A joint is a design decision",
+          visual: { position: "0 100%", alt: "Metal components being cut, formed and joined using controlled workshop setups", caption: "The approved joint must suit the load, materials, access, finish and classroom process." },
           paragraphs: [
             "A joining method should suit the job, not simply be familiar. Consider load, whether the connection must be permanent or removable, access to the joint, how heat could affect the metal or coating, and whether the finished joint must be neat or concealed. The plans, demonstrations and teacher permission determine which method is approved for each stage.",
             "Appearance and corrosion also influence the decision. Before permanent joining, complete a trial fit using the demonstrated process. Check that parts meet correctly, edges align, holes or features match, and the assembly remains in position. Stop and seek direction if the fit or approved method is uncertain."
@@ -128,6 +138,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Machining is permission-based",
+          visual: { position: "65% 0", alt: "Guarded workshop machine, bench vice and safety glasses", caption: "Permission applies to the trained person, machine, setup and specific task." },
           paragraphs: [
             "Drilling machines, lathes and other workshop machines require training, permission and the exact setup demonstrated by the teacher. The workpiece must be held using the approved device; hands are never a substitute for a vice, clamp, chuck or fixture.",
             "Before starting, identify the stop control, remove setup tools such as chuck keys as directed, secure loose clothing and hair, and check the work zone. Stop immediately if sound, vibration, swarf behaviour or work position changes."
@@ -136,6 +147,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Surface preparation and protection",
+          visual: { position: "65% 100%", alt: "Fabricated metal project progressing through checking, adjustment and protection", caption: "Remove faults and contamination before applying the approved protective finish." },
           paragraphs: [
             "A good finish begins with preparation. Treat burrs, scratches, scale, grease and dust using the approved classroom sequence. Protect prepared surfaces from contamination before the teacher-specified coating or finishing process.",
             "Follow product labels, safety information and teacher direction for ventilation, PPE, application and curing. Record the actual product and process used; do not infer them from another project."
@@ -157,6 +169,7 @@ window.COURSE_DATA = {
       sections: [
         {
           title: "Quality, technology and evaluation",
+          visual: { position: "65% 100%", alt: "Fabricated metal project with inspection and improvement symbols", caption: "Use measured checks and functional evidence to judge quality and direct improvement." },
           paragraphs: [
             "Compare conventional and CNC processes by suitability, not by assuming newer technology is always better. Conventional processes can offer direct control, flexibility and skill development, while CNC can support repeatability and complex shapes when suitable digital information and equipment are available. The best choice depends on accuracy, quantity, material, resources and purpose.",
             "Check quality throughout production using teacher-approved criteria. Evidence might include photographs, annotated sketches, measurements, trial fits and records of problems and corrections. A useful evaluation makes a specific judgement, supports it with evidence and identifies one realistic improvement."
@@ -165,6 +178,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Current and emerging manufacturing",
+          visual: { position: "65% 100%", alt: "Manufactured metal project surrounded by technology, adjustment and improvement symbols", caption: "Compare how current and emerging processes affect precision, repeatability, safety and waste." },
           paragraphs: [
             "Computer numerical control uses programmed information to control machine movement. Depending on the equipment, digital design data can support repeatable parts and complex profiles, but it also requires validated files, correct setup, suitable material and trained supervision.",
             "Laser, plasma, waterjet and CNC machining processes have different capabilities, limitations, costs and safety systems. Compare them using reliable evidence and the needs of the production context rather than promotional claims."
@@ -173,6 +187,7 @@ window.COURSE_DATA = {
         },
         {
           title: "Folio and final evaluation",
+          visual: { position: "100% 100%", alt: "Organised project notes, photograph, checklist and improvement arrow", caption: "Present a concise evidence chain and evaluate the result against the approved criteria." },
           paragraphs: [
             "Organise evidence from both projects so the reader can follow the brief, research, planning, production, quality checks, problem solving and evaluation. Captions should explain what the evidence proves, not merely identify the photograph.",
             "Compare the result with the teacher-approved criteria. Name specific strengths and limitations, cite the evidence, and propose one realistic change to the design, sequence, checking process or skill preparation."
