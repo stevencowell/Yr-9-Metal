@@ -154,3 +154,5 @@
   renderModule();
   bindFolio();
 })();
+
+(() => { const script = document.createElement('script'); script.src = '/Yr-9-Metal/shared/hub-navigation.js'; document.head.append(script); })();
