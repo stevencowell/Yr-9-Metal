@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Year 9 Industrial Technology – Metal Final Digital Examination">
+  <title>Year 9 Industrial Technology – Metal | Final Digital Examination</title>
+  <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+  <div class="password-gate" id="passwordGate">
+    <form class="gate-card" id="gateForm">
+      <p class="exam-kicker" style="color:var(--brand)">Teacher-controlled access</p>
+      <h1>Unlock exam</h1>
+      <p>Enter the password supplied by your teacher. Your answers will save only in this browser on this device.</p>
+      <label for="gatePassword"><strong>Exam password</strong></label>
+      <input id="gatePassword" type="password" inputmode="numeric" autocomplete="off" required>
+      <button class="btn" type="submit">Open exam</button>
+      <p class="gate-error" id="gateError" role="alert"></p>
+    </form>
+  </div>
+  <div id="examPage" hidden>
+    <header class="exam-header">
+      <div class="exam-shell">
+        <p><a id="backLink" href="../index.html">Back to course home</a></p>
+        <p class="exam-kicker" id="courseName"></p>
+        <h1 id="examTitle"></h1>
+        <p id="examSubtitle"></p>
+      </div>
+    </header>
+    <main class="exam-main">
+      <div class="exam-shell">
+        <section class="exam-card">
+          <h2>Exam information</h2>
+          <div class="notice-grid">
+            <div class="notice-item"><span>Course stage</span><strong id="metaStage"></strong></div>
+            <div class="notice-item"><span>Recommended time</span><strong id="metaTime"></strong></div>
+            <div class="notice-item"><span>Total marks</span><strong id="metaMarks"></strong></div>
+            <div class="notice-item"><span>Assessment status</span><strong id="metaStatus"></strong></div>
+            <div class="notice-item"><span>Task</span><strong id="metaTask"></strong></div>
+            <div class="notice-item"><span>Scheduled date</span><strong id="metaDate"></strong></div>
+            <div class="notice-item notice-wide"><span>Assessed outcomes</span><strong id="metaOutcomes"></strong></div>
+          </div>
+          <p class="exam-note" id="examDirections"></p>
+          <p><strong>PDF submission:</strong> When finished, use <em>Print / Save PDF</em>, choose <em>Save as PDF</em>, and name the file <strong id="pdfFilename"></strong>. Check the saved PDF before turning it in.</p>
+        </section>
+        <form id="examForm" novalidate>
+          <section class="exam-card">
+            <h2>Student details</h2>
+            <div class="student-grid">
+              <label>Student name<input data-student id="studentName" name="studentName" autocomplete="name"></label>
+              <label>Class<input data-student name="studentClass" autocomplete="off"></label>
+              <label>Teacher<input data-student name="teacherName" autocomplete="off"></label>
+              <label>Date completed<input data-student name="completedDate" type="date"></label>
+            </div>
+          </section>
+          <div class="exam-toolbar screen-only">
+            <div class="exam-progress">
+              <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+              <span class="progress-label" id="progressLabel"></span>
+            </div>
+            <button class="btn secondary" id="saveBtn" type="button">Save now</button>
+            <button class="btn" id="printBtn" type="button">Print / Save PDF</button>
+            <button class="btn secondary" id="lockBtn" type="button">Lock exam</button>
+            <button class="btn danger" id="clearBtn" type="button">Clear saved work</button>
+            <div class="save-status" id="saveStatus">Answers autosave on this device.</div>
+          </div>
+          <div id="examSections"></div>
+        </form>
+        <p class="exam-footer">This page stores work locally in this browser and device. Saving a PDF is the submission copy; local autosave is not a cloud submission.</p>
+      </div>
+    </main>
+  </div>
+  <script>window.EXAM_CONFIG = {"id":"wwhs-y9-metal-eoy-2026","course":"Year 9 Industrial Technology – Metal","title":"Final Digital Examination","subtitle":"Sheet-metal toolbox and fishing-rod-holder contexts · theory and application","stage":"Stage 5 · Year 9","time":"60 minutes","status":"2026 handbook: Final Examination · Term 4 Week 5 · 20%","backLabel":"Year 9 Metalwork","pdfFilename":"Surname_Firstname_Year9_Metal_Final_Exam.pdf","directions":"Answer every question. Select one answer for each multiple-choice item and type concise, justified responses. Apply course knowledge to the toolbox and fishing-rod-holder contexts where relevant. No sketches are required.","sections":[{"label":"Section A","title":"Knowledge and understanding","instructions":"Select the best answer.","questions":[{"kind":"choice","marks":1,"prompt":"Why must both likelihood and consequence be considered during risk assessment?","options":["They identify the fastest production method","Together they indicate the seriousness of the risk","They replace the hierarchy of controls","They determine the project finish"]},{"kind":"choice","marks":1,"prompt":"Which control is generally stronger than relying on PPE alone?","options":["Adding another warning poster","Working more quickly","Using a different colour of safety glasses","Isolating the hazard with a fixed barrier or guard"]},{"kind":"choice","marks":1,"prompt":"Which statement correctly distinguishes a material property from performance?","options":["A property is a characteristic; performance is how the material behaves in its intended use","A property is the price; performance is the colour","A property is the product; performance is the plan","They mean exactly the same thing"]},{"kind":"choice","marks":1,"prompt":"Which factor is most relevant when selecting metal for an outdoor fishing-rod holder?","options":["The metal nearest the bench","Colour only","Function, fabrication method, corrosion exposure and finish","Whether the metal is always magnetic"]},{"kind":"choice","marks":1,"prompt":"What is the main purpose of a datum edge?","options":["To identify the protective coating","To provide one reliable reference for marking","To replace the drawing","To show where to apply maximum force"]},{"kind":"choice","marks":1,"prompt":"Why is the waste side of a cutting line identified?","options":["To remove the need for checking","To make metal more ductile","To determine the joint type","To preserve the required finished dimension"]},{"kind":"choice","marks":1,"prompt":"Which factors should guide selection of a joining method?","options":["Load, permanence, access, heat effects, appearance and corrosion","Whichever method is fastest","Colour only","Another student\u0027s preference"]},{"kind":"choice","marks":1,"prompt":"Why is a trial fit completed before permanent joining?","options":["To harden the metal","To avoid using the plan","To check fit and alignment before errors are locked in","To remove all surface contamination"]},{"kind":"choice","marks":1,"prompt":"Which change during machining requires an immediate safe stop?","options":["A completed measurement check","Unexpected vibration, sound or workpiece movement","A clean work area","Correctly fitted PPE"]},{"kind":"choice","marks":1,"prompt":"Why must oil, scale and scratches be treated before coating?","options":["Coating always hides every defect","Preparation makes joints removable","It changes ferrous metal to non-ferrous metal","Surface preparation affects adhesion, appearance and corrosion protection"]},{"kind":"choice","marks":1,"prompt":"When is CNC most clearly advantageous?","options":["Producing repeatable parts from validated digital information","Every one-off task regardless of setup cost","When no trained operator is available","When dimensions have not been checked"]},{"kind":"choice","marks":1,"prompt":"What makes an evaluation evidence-based?","options":["It states that the project is good","It lists tools without explaining decisions","It compares the result with criteria and cites specific test or quality evidence","It reports only the student\u0027s preference"]}]},{"label":"Section B","title":"Short responses","instructions":"Answer directly and justify key decisions.","questions":[{"kind":"short","marks":3,"prompt":"Apply the hierarchy of controls to one realistic hazard from cutting, drilling or forming sheet metal."},{"kind":"short","marks":3,"prompt":"Compare ferrous and non-ferrous metals using one property and one suitable application for each group."},{"kind":"short","marks":3,"prompt":"Explain how a datum edge, waste-side marking and an independent recheck work together to improve accuracy."},{"kind":"short","marks":3,"prompt":"Explain three considerations when choosing between a permanent and removable joint."},{"kind":"short","marks":3,"prompt":"Compare a conventional process with a CNC or emerging process for producing a small batch of accurate metal parts."},{"kind":"short","marks":3,"prompt":"Explain how a production folio can prove problem solving rather than merely show the finished project."}]},{"label":"Section C","title":"Extended application","instructions":"Develop a structured response using specific technical reasoning.","questions":[{"kind":"long","marks":10,"prompt":"A sheet-metal toolbox lid does not close squarely after forming and joining. Analyse possible causes in marking out, cutting, forming, trial fitting and assembly. Recommend a controlled improvement process that protects safety and avoids further waste."},{"kind":"long","marks":10,"prompt":"A school is considering laser cutting some components that students currently mark and cut by hand. Evaluate the change in terms of accuracy, repeatability, student skill development, safety systems, setup cost, material waste and suitability for one-off versus batch production."}]}]};</script>
+  <script>Object.assign(window.EXAM_CONFIG, {"taskLabel":"Task 3 – Final Examination","scheduledDate":"Teacher to confirm (handbook specifies Term 4 Week 5)","outcomes":"IND5-1 to IND5-10","status":"Formal scheduled assessment · 2026 handbook · Term 4 Week 5 · 20%","backLabel":"Year 9 Industrial Technology – Metal"});</script>
+  <script src="exam.js"></script>
+</body>
+</html>
