@@ -36,11 +36,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "Why are both likelihood and consequence considered?", options: ["To decide how serious the risk is", "To choose the fastest tool", "To replace the demonstration", "To avoid all equipment"], answerIndex: 0, explanation: "Risk level depends on both the chance of harm and how serious the possible harm could be." },
-        { question: "What should happen if conditions change during practical work?", options: ["Continue carefully", "Stop, make the area safe and seek teacher direction", "Rely only on PPE", "Ask another student to finish"], answerIndex: 1, explanation: "Existing controls may no longer be effective when the work area, equipment, material or people nearby change." }
+        { question: "Why are both likelihood and consequence considered?", options: ["To decide how serious the risk is", "To choose the fastest tool", "To replace the demonstration", "To avoid all equipment"], answerIndex: 0, explanation: "Risk level depends on both the chance of harm and how serious the possible harm could be.", theoryIndex: 0 },
+        { question: "What should happen if conditions change during practical work?", options: ["Continue carefully", "Stop, make the area safe and seek teacher direction", "Rely only on PPE", "Ask another student to finish"], answerIndex: 1, explanation: "Existing controls may no longer be effective when the work area, equipment, material or people nearby change.", theoryIndex: 0 }
       ],
       writtenPrompt: "Choose one stage from the teacher-issued project plans. Identify one possible hazard, describe its likelihood and consequence, and explain which hierarchy-of-controls measures should be used before work begins.",
-      modelFeedback: "A strong response names a specific hazard, considers likelihood and consequence, and proposes controls in hierarchy order. PPE supports stronger controls rather than replacing them, and work must stop if conditions change."
+      modelFeedback: "During drilling, an unsecured workpiece could spin. This is possible and could cause a serious hand injury. I would use the approved vice or clamp and machine guard, follow the teacher’s setup and wear the directed PPE. If anything changes, I would stop and seek teacher direction."
     },
     {
       weeks: "3–4",
@@ -76,11 +76,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "Which statement correctly distinguishes property from performance?", options: ["A property is a metal characteristic; performance is how it behaves in use", "A property is cost; performance is colour", "A property is the product; performance is the plan", "They always mean the same thing"], answerIndex: 0, explanation: "Properties describe characteristics while performance describes how effectively the metal works in context." },
-        { question: "Which is the strongest material-selection justification?", options: ["It looks better", "It was first available", "Its properties suit function, fabrication, corrosion, availability and finish", "Ferrous is always best"], answerIndex: 2, explanation: "A sound justification connects relevant properties to the full project context." }
+        { question: "Which statement correctly distinguishes property from performance?", options: ["A property is a metal characteristic; performance is how it behaves in use", "A property is cost; performance is colour", "A property is the product; performance is the plan", "They always mean the same thing"], answerIndex: 0, explanation: "Properties describe characteristics while performance describes how effectively the metal works in context.", theoryIndex: 0 },
+        { question: "Which is the strongest material-selection justification?", options: ["It looks better", "It was first available", "Its properties suit function, fabrication, corrosion, availability and finish", "Ferrous is always best"], answerIndex: 2, explanation: "A sound justification connects relevant properties to the full project context.", theoryIndex: 0 }
       ],
       writtenPrompt: "Using the teacher-issued plans, identify the selected metal for one project part and justify the choice by referring to function, fabrication, corrosion, availability and finish.",
-      modelFeedback: "A strong response names the teacher-specified metal, identifies relevant properties and explains how those properties support performance, fabrication, corrosion conditions, availability and finish."
+      modelFeedback: "The teacher-issued plan specifies [metal] for [part]. Its [relevant property] suits the part’s function, and it can be fabricated using the approved workshop process. I would also explain how the material suits the expected corrosion conditions, availability and finish."
     },
     {
       weeks: "5–6",
@@ -116,11 +116,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "What is the main purpose of a datum edge?", options: ["Provide one reliable reference for marking", "Show where to apply force", "Replace the plans", "Identify finish colour"], answerIndex: 0, explanation: "A datum gives measurements a consistent starting point and reduces accumulated errors." },
-        { question: "What should happen before cutting or forming?", options: ["Secure the work and recheck markings", "Remove waste marks", "Force material into position", "Change sequence without approval"], answerIndex: 0, explanation: "Securing the work and checking datum, orientation, waste side and sequence support safe, accurate processing." }
+        { question: "What is the main purpose of a datum edge?", options: ["Provide one reliable reference for marking", "Show where to apply force", "Replace the plans", "Identify finish colour"], answerIndex: 0, explanation: "A datum gives measurements a consistent starting point and reduces accumulated errors.", theoryIndex: 0 },
+        { question: "What should happen before cutting or forming?", options: ["Secure the work and recheck markings", "Remove waste marks", "Force material into position", "Change sequence without approval"], answerIndex: 0, explanation: "Securing the work and checking datum, orientation, waste side and sequence support safe, accurate processing.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how a datum edge, waste-side marking, planned sequence and secure workholding can improve the quality of a sheet-metal project.",
-      modelFeedback: "A strong response explains the reliable reference, identifies what waste-side marking controls, connects sequence to later features and states that secure workholding prevents movement."
+      modelFeedback: "I measure from one datum edge so each mark has the same reliable starting point. I mark the waste side to protect the finished size, follow the planned sequence so later features still line up, and secure the work so it cannot move while I cut or form it."
     },
     {
       weeks: "7–8",
@@ -156,11 +156,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "Which factors should guide a joining method?", options: ["Load, permanence, access, heat, appearance and corrosion", "Only colour", "Whichever is fastest", "Another student’s choice"], answerIndex: 0, explanation: "A suitable joint must match functional, manufacturing and environmental needs." },
-        { question: "Why trial fit before permanent joining?", options: ["Check fit and alignment before errors are locked in", "Avoid the plans", "Make metal harder", "Replace the approved process"], answerIndex: 0, explanation: "A trial fit reveals contact, alignment and position problems while they can still be corrected." }
+        { question: "Which factors should guide a joining method?", options: ["Load, permanence, access, heat, appearance and corrosion", "Only colour", "Whichever is fastest", "Another student’s choice"], answerIndex: 0, explanation: "A suitable joint must match functional, manufacturing and environmental needs.", theoryIndex: 0 },
+        { question: "Why trial fit before permanent joining?", options: ["Check fit and alignment before errors are locked in", "Avoid the plans", "Make metal harder", "Replace the approved process"], answerIndex: 0, explanation: "A trial fit reveals contact, alignment and position problems while they can still be corrected.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how load, permanence, access, heat effect, appearance and corrosion could influence a joining method. Include why a trial fit is needed.",
-      modelFeedback: "A strong response links the method to function and working conditions rather than naming an unverified process, and explains that trial fitting checks contact, alignment and position."
+      modelFeedback: "The joining method must carry the expected load and suit whether the part needs to come apart. I would also check access, heat effects, appearance and corrosion. Before permanent joining, I would trial fit the parts to check contact, alignment and position."
     },
     {
       weeks: "9–10",
@@ -196,11 +196,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "How should conventional and CNC processes be compared?", options: ["By which looks advanced", "By suitability for the task and result", "Choose CNC every time", "Avoid conventional skills"], answerIndex: 1, explanation: "Suitability depends on accuracy, quantity, material, resources and purpose." },
-        { question: "Which is the strongest evaluation?", options: ["It was good", "Everything worked", "The trial fit showed misalignment, so I rechecked it; next time I would check earlier", "I would make it better"], answerIndex: 2, explanation: "A strong evaluation names evidence, explains the result and identifies a realistic improvement." }
+        { question: "How should conventional and CNC processes be compared?", options: ["By which looks advanced", "By suitability for the task and result", "Choose CNC every time", "Avoid conventional skills"], answerIndex: 1, explanation: "Suitability depends on accuracy, quantity, material, resources and purpose.", theoryIndex: 0 },
+        { question: "Which is the strongest evaluation?", options: ["It was good", "Everything worked", "The trial fit showed misalignment, so I rechecked it; next time I would check earlier", "I would make it better"], answerIndex: 2, explanation: "A strong evaluation names evidence, explains the result and identifies a realistic improvement.", theoryIndex: 2 }
       ],
       writtenPrompt: "Compare one conventional process with one CNC or emerging process by explaining when each would be suitable. Then evaluate one part of your project using specific evidence and identify one realistic improvement.",
-      modelFeedback: "A strong response compares processes using purpose, accuracy, quantity, material and resources. The evaluation cites specific evidence, refers to approved criteria and explains one practical improvement."
+      modelFeedback: "Hand cutting can suit a one-off part because it is flexible and develops practical skill. CNC can suit a batch when repeatability and accurate digital information matter. My [measurement, trial fit or photo] showed ____. Next time I would ____ so the result better meets the approved criteria."
     }
   ]
 };
