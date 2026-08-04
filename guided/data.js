@@ -100,7 +100,14 @@ window.COURSE_DATA = {
         },
         {
           title: "Marking and measuring tools",
-          visual: { position: "65% 50%", alt: "Metal stock with steel rule, square, marking tool and task PPE", caption: "Choose the correct measuring and marking tool for the feature, material and required accuracy." },
+          visual: {
+            galleryLabel: "Real marking and measuring tool photographs",
+            photos: [
+              { src: "guided/images/metal-tools/jenny-calipers.jpg", alt: "Two Jenny callipers with one straight leg and one inward-pointing marking leg", caption: "Jenny callipers are also called odd-leg callipers. Photo: Glenn McKechnie, CC BY-SA 3.0." },
+              { src: "guided/images/metal-tools/scribers.jpg", alt: "Assortment of straight and bent metalworking scribes with pointed steel tips", caption: "Scribes have sharp hardened points; use the type demonstrated for the task. Photo: Glenn McKechnie, CC BY-SA 3.0." },
+              { src: "guided/images/metal-tools/centre-punch.jpg", alt: "Steel centre punch with a knurled body and pointed end", caption: "One centre-punch example; the teacher selects the suitable type and size. Photo: Luke Milburn, CC BY 2.0." }
+            ]
+          },
           paragraphs: [
             "Select the measuring and marking tools demonstrated for the feature: a steel rule or tape for suitable lengths, a square for perpendicular references, a scriber for clear layout lines and a centre punch for an approved hole location.",
             "Measurement accuracy prevents wasted material. Read the issued dimension, work from the approved reference and complete an independent recheck before the material enters a cutting, drilling or forming setup."
@@ -109,7 +116,14 @@ window.COURSE_DATA = {
         },
         {
           title: "Cutting and forming sequence",
-          visual: { position: "0 100%", alt: "Metalwork operations showing mark-out, cutting, forming and joining under control", caption: "Sequence operations so each checked datum and feature supports the next stage." },
+          visual: {
+            galleryLabel: "Sheet-metal cutting and forming tool references",
+            photos: [
+              { src: "guided/images/metal-tools/tin-snips.jpg", alt: "Pair of hand-operated tin snips with two cutting blades and loop handles", caption: "Tin snips are selected to suit the demonstrated cut and material. Photo: Zkabirkhan, CC0 1.0." },
+              { src: "guided/images/metal-tools/manual-nibbler.jpg", alt: "Manual sheet-metal nibbler with two handles and a compact cutting head", caption: "A manual nibbler removes small pieces of sheet; the image is for recognition, not an operating sequence. Photo: Richard Frantz Jr, public domain." },
+              { src: "guided/images/metal-tools/bossing-mallet.png", alt: "Wooden bossing mallet with a smooth rounded pear-shaped head", caption: "The rounded head identifies a bossing mallet. Teacher demonstrations control the actual forming setup. AI-generated identification reference." }
+            ]
+          },
           paragraphs: [
             "Use only the cutting or forming process shown for the material and feature. Support large or awkward material, keep hands outside the demonstrated danger zone and remove burrs using the approved process before passing work to the next stage.",
             "Forming order can affect later dimensions, hole positions and access. Trial or check at the teacher-specified points, and record what changed rather than forcing a part to match."
@@ -141,7 +155,13 @@ window.COURSE_DATA = {
         },
         {
           title: "Machining is permission-based",
-          visual: { position: "65% 0", alt: "Guarded workshop machine, bench vice and safety glasses", caption: "Permission applies to the trained person, machine, setup and specific task." },
+          visual: {
+            galleryLabel: "Guarded workshop cutting equipment references",
+            photos: [
+              { src: "guided/images/metal-tools/angle-grinder.jpg", alt: "Angle grinder at rest with its side handle and wheel guard fitted", caption: "An angle grinder requires specific permission, the correct guarded setup and task-directed PPE. Photo: soulfish, CC BY-SA 2.0." },
+              { src: "guided/images/metal-tools/stationary-metal-cutoff-saw.png", alt: "Stationary pedestal metal cut-off saw at rest with a guarded circular wheel and built-in vice", caption: "A guarded stationary metal cut-off saw. The image identifies the machine family; it does not replace the workshop SOP or demonstration. AI-generated identification reference." }
+            ]
+          },
           paragraphs: [
             "Drilling machines, lathes and other workshop machines require training, permission and the exact setup demonstrated by the teacher. The workpiece must be held using the approved device; hands are never a substitute for a vice, clamp, chuck or fixture.",
             "Before starting, identify the stop control, remove setup tools such as chuck keys as directed, secure loose clothing and hair, and check the work zone. Stop immediately if sound, vibration, swarf behaviour or work position changes."

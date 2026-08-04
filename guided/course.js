@@ -64,16 +64,32 @@
     if (text) text.textContent = `${percent}% evidence entered`;
   }
 
+  function theoryVisualHtml(section, index) {
+    const visualClass = `theory-visual${index % 2 ? " theory-visual--left" : ""}`;
+    if (Array.isArray(section.visual.photos) && section.visual.photos.length) {
+      return `<div class="${visualClass} theory-photo-gallery" aria-label="${escapeHtml(section.visual.galleryLabel || "Tool photo references")}">
+        ${section.visual.photos.map((photo) => `<figure class="theory-photo">
+          <a href="${escapeHtml(photo.src)}" target="_blank" rel="noopener" aria-label="Open larger image: ${escapeHtml(photo.alt)}">
+            <img src="${escapeHtml(photo.src)}" alt="${escapeHtml(photo.alt)}" loading="lazy">
+            <span class="open-larger">Open larger</span>
+          </a>
+          <figcaption>${escapeHtml(photo.caption)}</figcaption>
+        </figure>`).join("")}
+      </div>`;
+    }
+    return `<figure class="${visualClass}">
+      <div class="theory-visual__image" role="img" aria-label="${escapeHtml(section.visual.alt)}" style="background-position:${escapeHtml(section.visual.position)}"></div>
+      <figcaption>${escapeHtml(section.visual.caption)}</figcaption>
+    </figure>`;
+  }
+
   function theoryHtml(section, index, moduleNumber) {
     const readingHeadings = ["Understand the idea", "Apply it to this project", "Check before moving on"];
     return `<section class="card theory-section" id="theory-${moduleNumber}-${index + 1}" tabindex="-1">
       <p class="eyebrow">Theory ${index + 1}</p>
       <h2>${escapeHtml(section.title)}</h2>
       <h3 class="theory-chunk-heading">${readingHeadings[0]}</h3>
-      <figure class="theory-visual${index % 2 ? " theory-visual--left" : ""}">
-        <div class="theory-visual__image" role="img" aria-label="${escapeHtml(section.visual.alt)}" style="background-position:${escapeHtml(section.visual.position)}"></div>
-        <figcaption>${escapeHtml(section.visual.caption)}</figcaption>
-      </figure>
+      ${theoryVisualHtml(section, index)}
       ${section.paragraphs.map((p, paragraphIndex) => `${paragraphIndex > 0 && paragraphIndex < readingHeadings.length ? `<h3 class="theory-chunk-heading">${readingHeadings[paragraphIndex]}</h3>` : ""}<p>${escapeHtml(p)}</p>`).join("")}
       ${section.callout ? `<div class="callout">${escapeHtml(section.callout)}</div>` : ""}
     </section>`;
