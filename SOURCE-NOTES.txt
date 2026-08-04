@@ -14,13 +14,18 @@ Future syllabus reference
 - Official outcomes: https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes
 
 Source boundary and excluded material
-- No authentic Metalwork project plans, detailed assessment notification, due date, weighting or submission destination were present.
+- Two authoritative Metalwork drawings were located in the authorised teacher Drive and copied unchanged into this repository: TOOL CARRYALL DEVELOPMENT and FISHING ROD HOLDER: COMPONENTS.
+- The Tool Carryall drawing matches the teacher program's carryall project and the site's Sheet-metal Toolbox context; the site states this naming boundary rather than changing the source title.
+- The Fishing Rod Holder components drawing matches the teacher program's stake, rod-holder tube and rotation-tab construction context.
+- The drawings support plan reading. Current teacher-issued plans, demonstrations and instructions continue to control exact dimensions, materials, settings, construction sequence and permissions.
+- Detailed assessment conditions, due dates, weightings and submission destinations are not inferred from the drawings.
 - Carry-All_Working_Drawing.pdf is a Timber barbecue carry-all drawing, not Metalwork evidence.
 - carryall.png and numerous carryall week pages are Timber content and are excluded from the new student pathway.
+- Fishing rod stand v1.pdf and Fishing rod stand v1a.pdf show a different multi-rod stand and are excluded from the Fishing Rod Holder project context.
 - The placeholder Google Classroom code and empty link in the old landing page are removed rather than guessed.
-- Dimensions, exact materials, joint specifications and project production details defer to teacher-issued material.
 
 New authored material
 - Each new integrative theory section was authored individually with ChatGPT in the in-app browser using the source boundary above.
+- The two plan-reading sections were authored individually with ChatGPT in the in-app browser from the verified drawing facts and each has exactly ten source-grounded checks.
 - The new hero is a process-led sheet-metal workshop scene created with ChatGPT. It does not claim to show either finished project or plan geometry.
 - The folio uses one matching 12-panel ChatGPT-created visual sequence, cropped into twelve accessible evidence prompts. It contains no measurements or authentic plan claims.

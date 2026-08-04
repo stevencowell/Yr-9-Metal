@@ -1,12 +1,26 @@
-YEAR 9 METALWORK - LOCAL BUILD VALIDATION
+YEAR 9 METALWORK - PLAN INTEGRATION VALIDATION
 
-- Landing page renders without the placeholder Classroom block or contaminated Timber drawing pathway.
-- Five two-week modules render through the shared module shell.
-- Each module contains three theory sections, two knowledge checks, written evidence, model feedback, student identity, local autosave, progress and Print / Save PDF.
-- The folio contains exactly 12 editable evidence cards with matching course-specific infographic crops, local autosave and Print / Save PDF.
-- Module answers, identity and written evidence persist after reload.
-- All local links and assets from index.html, module 1, module 5 and folio.html returned successfully.
-- JavaScript syntax checks passed and the rendered browser console contained no errors or warnings.
-- Desktop rendering was visually checked in the in-app browser.
-- Landing, module and folio pages were rendered and visually checked at a genuine 500 px narrow viewport; the navigation stacks or scrolls cleanly, content remains readable and the folio becomes one column.
-- Folio visual assets were inspected as a 4-by-3 sequence and all 12 accessible visual prompts are present in the rendered document.
+Source and file integrity
+- The Tool Carryall and Fishing Rod Holder component drawings were matched to their teacher programs and visually inspected before integration.
+- Repository PDF SHA-256 values match the downloaded task copies recorded in PLAN-SOURCE-MANIFEST.md.
+- The source PDFs were copied unchanged. The PNG files are full-page preview renders made from the task copies.
+- Different fishing rod stand drawings, workshop stock layouts and Timber carry-all material were deliberately excluded.
+
+Course structure and accessibility
+- JavaScript syntax checks pass for guided/data.js and guided/course.js.
+- Module 2 contains five theory sections: the three existing sections plus two new plan-reading sections.
+- Each new plan-reading section has exactly ten source-grounded multiple-choice checks; every check has four options and a valid answer index.
+- Both preview images load at 2573 x 1819 pixels and use accurate project-specific alt text and captions.
+- Both previews expose a visible Open larger control inside a keyboard-focusable link with a descriptive accessible name, target=_blank and rel=noopener.
+- The Resources section links to both verified plan PDFs and states the teacher-control boundary.
+
+Rendered and interaction checks
+- Module 2 rendered in the in-app browser with both plans, all 22 module checks, written evidence and Print / Save PDF.
+- The responsive layout was checked at an exact 390 CSS-pixel viewport: no horizontal overflow; both plan previews loaded and fitted their content cards; both landing-page resource links remained present.
+- Student name, class and a plan-specific answer persisted visibly after reload.
+- A correct plan-specific answer returned the expected source-grounded feedback.
+- The Print / Save PDF control was unique and invoked without a page error; print CSS retains the full plan image and removes the overlay label.
+- The rendered browser console contained no errors or warnings.
+
+Release verification
+- Pending commit, GitHub push and live GitHub Pages verification.

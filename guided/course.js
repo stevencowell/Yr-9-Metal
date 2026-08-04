@@ -66,6 +66,16 @@
 
   function theoryVisualHtml(section, index) {
     const visualClass = `theory-visual${index % 2 ? " theory-visual--left" : ""}`;
+    if (section.visual.plan) {
+      const plan = section.visual.plan;
+      return `<figure class="${visualClass} theory-plan">
+        <a href="${escapeHtml(plan.pdf)}" target="_blank" rel="noopener" aria-label="Open larger plan: ${escapeHtml(plan.alt)}">
+          <img src="${escapeHtml(plan.preview)}" alt="${escapeHtml(plan.alt)}" loading="lazy">
+          <span class="open-larger">Open larger</span>
+        </a>
+        <figcaption>${escapeHtml(plan.caption)}</figcaption>
+      </figure>`;
+    }
     if (Array.isArray(section.visual.photos) && section.visual.photos.length) {
       return `<div class="${visualClass} theory-photo-gallery" aria-label="${escapeHtml(section.visual.galleryLabel || "Tool photo references")}">
         ${section.visual.photos.map((photo) => `<figure class="theory-photo">
