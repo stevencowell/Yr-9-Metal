@@ -40,6 +40,7 @@ window.COURSE_DATA = {
         { question: "What should happen if conditions change during practical work?", options: ["Continue carefully", "Stop, make the area safe and seek teacher direction", "Rely only on PPE", "Ask another student to finish"], answerIndex: 1, explanation: "Existing controls may no longer be effective when the work area, equipment, material or people nearby change.", theoryIndex: 0 }
       ],
       writtenPrompt: "Choose one stage from the teacher-issued project plans. Identify one possible hazard, describe its likelihood and consequence, and explain which hierarchy-of-controls measures should be used before work begins.",
+      clarification: "Pick one project stage. What could cause harm, how serious is the risk, and which controls should be used?",
       modelFeedback: "During drilling, an unsecured workpiece could spin. This is possible and could cause a serious hand injury. I would use the approved vice or clamp and machine guard, follow the teacher’s setup and wear the directed PPE. If anything changes, I would stop and seek teacher direction."
     },
     {
@@ -80,6 +81,7 @@ window.COURSE_DATA = {
         { question: "Which is the strongest material-selection justification?", options: ["It looks better", "It was first available", "Its properties suit function, fabrication, corrosion, availability and finish", "Ferrous is always best"], answerIndex: 2, explanation: "A sound justification connects relevant properties to the full project context.", theoryIndex: 0 }
       ],
       writtenPrompt: "Using the teacher-issued plans, identify the selected metal for one project part and justify the choice by referring to function, fabrication, corrosion, availability and finish.",
+      clarification: "Which metal is specified for one part? Why does it suit the job, making process, corrosion conditions, availability and finish?",
       modelFeedback: "The teacher-issued plan specifies [metal] for [part]. Its [relevant property] suits the part’s function, and it can be fabricated using the approved workshop process. I would also explain how the material suits the expected corrosion conditions, availability and finish."
     },
     {
@@ -120,6 +122,7 @@ window.COURSE_DATA = {
         { question: "What should happen before cutting or forming?", options: ["Secure the work and recheck markings", "Remove waste marks", "Force material into position", "Change sequence without approval"], answerIndex: 0, explanation: "Securing the work and checking datum, orientation, waste side and sequence support safe, accurate processing.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how a datum edge, waste-side marking, planned sequence and secure workholding can improve the quality of a sheet-metal project.",
+      clarification: "How do the datum, waste-side marks, work order and secure holding improve quality?",
       modelFeedback: "I measure from one datum edge so each mark has the same reliable starting point. I mark the waste side to protect the finished size, follow the planned sequence so later features still line up, and secure the work so it cannot move while I cut or form it."
     },
     {
@@ -160,6 +163,7 @@ window.COURSE_DATA = {
         { question: "Why trial fit before permanent joining?", options: ["Check fit and alignment before errors are locked in", "Avoid the plans", "Make metal harder", "Replace the approved process"], answerIndex: 0, explanation: "A trial fit reveals contact, alignment and position problems while they can still be corrected.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how load, permanence, access, heat effect, appearance and corrosion could influence a joining method. Include why a trial fit is needed.",
+      clarification: "What affects the joining choice? Why must you trial-fit before joining permanently?",
       modelFeedback: "The joining method must carry the expected load and suit whether the part needs to come apart. I would also check access, heat effects, appearance and corrosion. Before permanent joining, I would trial fit the parts to check contact, alignment and position."
     },
     {
@@ -200,6 +204,7 @@ window.COURSE_DATA = {
         { question: "Which is the strongest evaluation?", options: ["It was good", "Everything worked", "The trial fit showed misalignment, so I rechecked it; next time I would check earlier", "I would make it better"], answerIndex: 2, explanation: "A strong evaluation names evidence, explains the result and identifies a realistic improvement.", theoryIndex: 2 }
       ],
       writtenPrompt: "Compare one conventional process with one CNC or emerging process by explaining when each would be suitable. Then evaluate one part of your project using specific evidence and identify one realistic improvement.",
+      clarification: "When would each process suit the job? What evidence shows one project result, and what would you improve?",
       modelFeedback: "Hand cutting can suit a one-off part because it is flexible and develops practical skill. CNC can suit a batch when repeatability and accurate digital information matter. My [measurement, trial fit or photo] showed ____. Next time I would ____ so the result better meets the approved criteria."
     }
   ]
