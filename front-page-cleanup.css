@@ -1,0 +1,6 @@
+/* Task 34: retain course orientation and modules only. */
+.course-family-intro + .section,
+#outcomes,
+#assessment,
+#resources { display:none!important; }
+#pathway .module-card:last-child { display:none!important; }
