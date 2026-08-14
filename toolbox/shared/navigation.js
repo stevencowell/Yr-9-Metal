@@ -1,12 +1,9 @@
 (function () {
   "use strict";
-
   if (document.querySelector(".course-family-nav")) return;
-
   const script = document.currentScript;
   const root = new URL("../", script && script.src ? script.src : location.href);
-  const stylesheetUrl = new URL("course-family-navigation.css?v=20260814", root).href;
-
+  const stylesheetUrl = new URL("../course-family-navigation.css?v=20260814", root).href;
   if (!document.querySelector("link[data-course-family-nav-styles]")) {
     const stylesheet = document.createElement("link");
     stylesheet.rel = "stylesheet";
@@ -14,37 +11,30 @@
     stylesheet.dataset.courseFamilyNavStyles = "";
     document.head.append(stylesheet);
   }
-
   const path = location.pathname.toLowerCase();
   const rootPath = root.pathname.replace(/\/$/, "").toLowerCase();
   const isHome = path === `${rootPath}/` || path === `${rootPath}/index.html`;
-
   const nav = document.createElement("nav");
   nav.className = "course-family-nav screen-only";
-  nav.setAttribute("aria-label", "Year 9 Metalwork course navigation");
-
+  nav.setAttribute("aria-label", "Sheet-metal Toolbox course navigation");
   const inner = document.createElement("div");
   inner.className = "course-family-nav__inner";
-
   const brand = document.createElement("a");
   brand.className = "course-family-nav__brand";
   brand.href = new URL("index.html", root).href;
-  brand.innerHTML = '<span class="course-family-nav__mark" aria-hidden="true">M9</span><span>Year 9 Metalwork</span>';
-
+  brand.innerHTML = '<span class="course-family-nav__mark" aria-hidden="true">TB</span><span>Sheet-metal Toolbox</span>';
   const links = document.createElement("div");
   links.className = "course-family-nav__links";
-
   const items = [
     ["Course", "index.html", isHome],
     ["Modules", "index.html#pathway", path.endsWith("/module.html")],
-    ["Video learning", "youtube-library/video-library.html", path.includes("/youtube-library/")],
+    ["Video learning", "youtube-library/index.html", path.includes("/youtube-library/")],
     ["Busy Work", "https://stevencowell.github.io/busy-worksheets/?library=metal", false, true],
-    ["My folio", "index.html#pathway", false],
-    ["Project resource", "index.html#resources", isHome && location.hash === "#resources"],
-    ["Teacher resources", "teacher-resources/index.html", path.includes("/teacher-resources")],
+    ["My folio", "folio.html", path.endsWith("/folio.html")],
+    ["Project resource", "project-resource.html", path.endsWith("/project-resource.html")],
+    ["Teacher resources", "teacher-resources.html", path.endsWith("/teacher-resources.html")],
     ["Main Menu", "https://stevencowell.github.io/Main-Page/", false, true]
   ];
-
   items.forEach(([label, href, current, external]) => {
     const link = document.createElement("a");
     link.textContent = label;
@@ -52,7 +42,6 @@
     if (current) link.setAttribute("aria-current", "page");
     links.append(link);
   });
-
   inner.append(brand, links);
   nav.append(inner);
   document.body.prepend(nav);
