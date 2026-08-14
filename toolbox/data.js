@@ -101,7 +101,12 @@ window.COURSE_DATA = {
             "The existing program identifies a sheet-metal Toolbox, matching the teacher-issued drawing titled “TOOL CARRYALL DEVELOPMENT”. The teacher-issued brief and plan define the exact requirements; this unit does not substitute its own geometry.",
             "Separate requirements from preferences. Record the user, function, environment, approved materials and processes, then identify which evidence will demonstrate that the finished Toolbox meets the brief."
           ],
-          "callout": "Keep the project brief, drawing and production evidence connected."
+          "callout": "Keep the project brief, drawing and production evidence connected.",
+          "visual": {
+            "position": "33.333% 0",
+            "alt": "Balance showing function, time and available metal stock as linked Toolbox constraints",
+            "caption": "Connect the Toolbox user, function, materials and constraints before production planning."
+          }
         },
         {
           "title": "Design and project planning",
