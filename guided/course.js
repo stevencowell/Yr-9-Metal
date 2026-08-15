@@ -102,7 +102,18 @@
       ${theoryVisualHtml(section, index)}
       ${section.paragraphs.map((p, paragraphIndex) => `${paragraphIndex > 0 && paragraphIndex < readingHeadings.length ? `<h3 class="theory-chunk-heading">${readingHeadings[paragraphIndex]}</h3>` : ""}<p>${escapeHtml(p)}</p>`).join("")}
       ${section.callout ? `<div class="callout">${escapeHtml(section.callout)}</div>` : ""}
+      ${videoHtml(section.video)}
     </section>${checksHtml(course.modules[moduleNumber - 1], moduleNumber, index)}`;
+  }
+
+  function videoHtml(video) {
+    if (!video) return "";
+    const url = `https://www.youtube.com/watch?v=${encodeURIComponent(video.videoId)}`;
+    return `<aside class="section-video" aria-label="Video learning">
+      <div><p class="eyebrow">Video learning</p><h3>${escapeHtml(video.title)}</h3><p><strong>Watch for:</strong> ${escapeHtml(video.watchFor)}</p><p class="video-source">YouTube · ${escapeHtml(video.channel)}</p></div>
+      <button class="video-shell" type="button" data-video-id="${escapeHtml(video.videoId)}" data-video-title="${escapeHtml(video.title)}" aria-label="Play ${escapeHtml(video.title)}"><img src="https://i.ytimg.com/vi/${encodeURIComponent(video.videoId)}/hqdefault.jpg" alt="" loading="lazy"><span>Play video</span></button>
+      <a class="video-fallback" href="${url}" target="_blank" rel="noopener">Open in YouTube</a>
+    </aside>`;
   }
 
   function helpHtml(id, section, moduleNumber) {
@@ -121,7 +132,7 @@
     if (!Number.isInteger(theoryIndex)) return "";
     const checks = module.checks.map((check, index) => ({ check, index })).filter(({ check }) => (Number(check.theoryIndex) || 0) === theoryIndex);
     if (!checks.length) return "";
-    return `<section class="card theory-section"><p class="eyebrow">Knowledge check</p><h2>Check your understanding</h2>
+    return `<section class="card theory-section guided-practice"><p class="eyebrow">Guided practice</p><h2>Check your understanding</h2>
       ${checks.map(({ check, index }) => {
         const section = { ...module.sections[theoryIndex], index: theoryIndex };
         return `<div class="check" data-check="${index}">
@@ -144,7 +155,12 @@
     document.querySelector("[data-module-title]").textContent = module.title;
     document.querySelector("[data-module-summary]").textContent = module.summary;
     host.innerHTML = `
-      <section class="card progress-panel">
+      <section class="card module-overview">
+        <div><p class="eyebrow">Module presentation</p><h2>Preview, learn and save evidence</h2><p>${escapeHtml(module.summary)}</p><p class="fine">Work through the presentation, theory, guided checks and written response in order.</p></div>
+        <a class="btn presentation-link" href="presentations/${escapeHtml(course.presentationStem)}-module-${number}.pptx" download>Download presentation</a>
+      </section>
+      <section class="card progress-panel student-evidence" aria-labelledby="student-evidence-title">
+        <div><p class="eyebrow">Student evidence</p><h2 id="student-evidence-title">Your details and progress</h2></div>
         <strong data-progress-text>0% evidence entered</strong>
         <div class="progress-track" aria-hidden="true"><div class="progress-fill" data-progress-fill></div></div>
         <div class="student-grid" style="margin-top:18px">
@@ -202,6 +218,16 @@
         const target = host.querySelector(`#${link.dataset.theoryLink}`);
         if (target) window.setTimeout(() => target.focus({ preventScroll: true }), 0);
       });
+    });
+    host.querySelectorAll("[data-video-id]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(button.dataset.videoId)}?autoplay=1&rel=0`;
+        iframe.title = button.dataset.videoTitle;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        button.replaceWith(iframe);
+      }, { once: true });
     });
     host.querySelector("[data-clarification-toggle]").addEventListener("click", (event) => {
       const panel = host.querySelector("[data-clarification-panel]");

@@ -1,5 +1,6 @@
 window.COURSE_DATA = {
   "shortTitle": "Fishing Rod Holder",
+  "presentationStem": "fishing-rod-holder",
   "storagePrefix": "yr9-fishing-rod-holder-guided",
   "modules": [
     {
@@ -9,6 +10,7 @@ window.COURSE_DATA = {
       "sections": [
         {
           "title": "Risk management is a process, not a poster",
+          "video": { "videoId": "XOkPcLD5Soo", "title": "The Hierarchy of Controls", "watchFor": "how stronger controls are selected before PPE and reviewed when conditions change", "channel": "Healthier Workforce Center" },
           "visual": {
             "position": "65% 0",
             "alt": "Workshop warning, guarded machine, secure bench vice and safety glasses",
@@ -84,6 +86,7 @@ window.COURSE_DATA = {
       "sections": [
         {
           "title": "Choose metal for the job",
+          "video": { "videoId": "PaGJwOPg2kU", "title": "Understanding Metals", "watchFor": "how strength, ductility, hardness and manufacturing behaviour help distinguish metal choices", "channel": "The Efficient Engineer" },
           "visual": {
             "position": "100% 0",
             "alt": "Common metal stock profiles and contrasting surface finishes",
@@ -310,6 +313,7 @@ window.COURSE_DATA = {
         },
         {
           "title": "Marking and measuring tools",
+          "video": { "videoId": "bByYRFZYAIA", "title": "N5 D&M - Marking Out (Metal)", "watchFor": "how datum edges, clear lines and pre-cut checks improve marking accuracy", "channel": "LHS Technologies" },
           "visual": {
             "galleryLabel": "Real marking and measuring tool photographs",
             "photos": [
@@ -338,6 +342,7 @@ window.COURSE_DATA = {
         },
         {
           "title": "Cutting and forming sequence",
+          "video": { "videoId": "NAaHh_V3rX0", "title": "Sheet Metal Bending: Basics, Allowances, and Tips for Best Results", "watchFor": "how bend order, allowance and spring-back affect a planned forming sequence", "channel": "RAPID DIRECT" },
           "visual": {
             "galleryLabel": "Sheet-metal cutting and forming tool references",
             "photos": [
@@ -402,6 +407,7 @@ window.COURSE_DATA = {
       "sections": [
         {
           "title": "A joint is a design decision",
+          "video": { "videoId": "1G8lGECOe1U", "title": "A Step-By-Step Guide on How to Use POP Rivets | Fasteners 101", "watchFor": "the rivet parts, grip range and controlled setting used only where the approved plan specifies rivets", "channel": "Albany County Fasteners" },
           "visual": {
             "position": "0 100%",
             "alt": "Metal components being cut, formed and joined using controlled workshop setups",
@@ -438,6 +444,7 @@ window.COURSE_DATA = {
         },
         {
           "title": "Surface preparation and protection",
+          "video": { "videoId": "q0CAfXV-YdY", "title": "GCSE Chemistry - What is Corrosion and How to Stop it (2026/27 exams)", "watchFor": "how surface condition, moisture and a continuous protective barrier affect corrosion", "channel": "Cognito" },
           "visual": {
             "position": "65% 100%",
             "alt": "Fabricated metal project progressing through checking, adjustment and protection",
@@ -500,6 +507,7 @@ window.COURSE_DATA = {
         },
         {
           "title": "Current and emerging manufacturing",
+          "video": { "videoId": "lEyNWtM6MW4", "title": "CNC machining - What is it and How Does it Work? (Must Know Basics)", "watchFor": "how programmed movement, setup and repeatability differ from conventional classroom processes", "channel": "Protolabs" },
           "visual": {
             "position": "65% 100%",
             "alt": "Manufactured metal project surrounded by technology, adjustment and improvement symbols",
