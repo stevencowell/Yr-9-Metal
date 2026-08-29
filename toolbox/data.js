@@ -128,8 +128,8 @@ window.COURSE_DATA = {
           "title": "Read the Toolbox plan before marking out",
           "visual": {
             "plan": {
-              "pdf": "assets/plans/year9-metal-toolbox-tool-carryall-plan.pdf",
-              "preview": "assets/plans/year9-metal-toolbox-tool-carryall-plan.png",
+              "pdf": "../assets/plans/year9-metal-toolbox-tool-carryall-plan.pdf",
+              "preview": "../assets/plans/year9-metal-toolbox-tool-carryall-plan.png",
               "alt": "Teacher-issued Tool Carryall development drawing showing the handle, body and two side pieces with dimensions and fold details.",
               "caption": "Teacher-issued Tool Carryall development drawing used for the site’s Sheet-metal Toolbox context. The drawing, teacher demonstrations and current workshop instructions control all exact details."
             }

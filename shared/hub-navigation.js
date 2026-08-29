@@ -37,6 +37,7 @@
   const items = [
     ["Course", "index.html", isHome],
     ["Modules", "index.html#pathway", path.endsWith("/module.html")],
+    ["Syllabus learning", "syllabus-learning.html", path.endsWith("/syllabus-learning.html")],
     ["Video learning", "youtube-library/video-library.html", path.includes("/youtube-library/")],
     ["Puzzles", "https://stevencowell.github.io/busy-worksheets/?library=metal", false, true],
     ["My folio", "index.html#pathway", false],
